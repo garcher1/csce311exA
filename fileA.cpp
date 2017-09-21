@@ -1,6 +1,5 @@
 #include <iostream>
 #include "fileA.h"
-#include <cstdio>
 #include "file1.h"
 
 std::string fooA(std::string sA)
