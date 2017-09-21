@@ -5,7 +5,9 @@
 std::string fooA(std::string sA)
 {
   std::cout<<sA<<"\n";
-  if(sA.size()==0) return "";
-  else if(sA.size()==1) return sA+"?";
-  return foo1(sA.substr(0,sA.size()-1)) + sA.substr(sA.size()-1) + "?";
-}//"horble" --> foo1("horbl") + "e" + "?"
+  std::string sX = "";
+  for(int i=0;i<sA.size();i++){
+    sX+=std::string(1,sA[i])+"?";
+    std::cout<<sX<<"\n";
+  }return fooZ(sX);
+}
